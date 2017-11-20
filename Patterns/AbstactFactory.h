@@ -5,6 +5,9 @@ using namespace std;
 
 void abstract_facroty_test();
 
+namespace abstractfactory {
+
+
 class View {
 public:
     virtual void info() = 0;
@@ -83,7 +86,7 @@ public:
          LinuxViewFactry() {cout << "LinuxViewFactry()" <<endl;}
 };
 
-
+} // namespace abstractfactory
 
 
 #endif // ABSTACTFACTORY_H
