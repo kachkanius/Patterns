@@ -7,6 +7,8 @@
 #include <factorial.h>
 #include <limits>
 #include <Strategy.h>
+#include <RLValues.h>
+
 using namespace std;
 
 
@@ -28,6 +30,8 @@ int main()
     }
 
     strategy_test();
+
+    test_rv_Values();
 
     return 0;
 }

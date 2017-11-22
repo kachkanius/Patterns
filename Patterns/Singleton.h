@@ -14,5 +14,19 @@ private:
 
 }
 
+namespace double_singleton {
+class DoubleSingleton
+{
+public:
+    static DoubleSingleton* getInstance();
+private:
+    DoubleSingleton(){}
+    ~DoubleSingleton(){}
+    DoubleSingleton& operator=(DoubleSingleton&);
+    static DoubleSingleton* minstance;
+};
+
+}
+
 
 #endif // SINGLETON_H

@@ -1,4 +1,5 @@
 #include "Singleton.h"
+#include <memory>
 
 namespace mayers_singleton {
 Singleton &Singleton::getInstance()
@@ -9,3 +10,11 @@ Singleton &Singleton::getInstance()
 
 }
 
+//static double_singleton::DoubleSingleton* double_singleton::DoubleSingleton::minstance = nullptr;
+
+double_singleton::DoubleSingleton *double_singleton::DoubleSingleton::getInstance()
+{
+    if (!minstance) {
+
+    }
+}

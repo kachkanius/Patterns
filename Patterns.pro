@@ -10,7 +10,8 @@ SOURCES += main.cpp \
     Patterns/Singleton.cpp \
     Patterns/Strategy.cpp \
     virtual.cpp \
-    factorial.cpp
+    factorial.cpp \
+    RLValues.cpp
 
 HEADERS += \
     Patterns/AbstactFactory.h \
@@ -19,7 +20,10 @@ HEADERS += \
     Patterns/Singleton.h \
     Patterns/Strategy.h \
     virtual.h \
-    factorial.h
+    factorial.h \
+    RLValues.h
+
+INCLUDEPATH += Patterns
 
 QMAKE_CXXFLAGS += -std=c++11
-QMAKE_CFLAGS += --stack,1024*1024*1024*1024
+
