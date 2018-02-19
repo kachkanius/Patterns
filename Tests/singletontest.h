@@ -8,7 +8,9 @@ class SingleToneTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit SingleToneTest(QObject *parent = nullptr){}
+    explicit SingleToneTest(QObject *parent = nullptr){
+        (void) parent;
+    }
 
 private slots:
     void test_success() {

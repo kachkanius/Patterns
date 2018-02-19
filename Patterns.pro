@@ -4,8 +4,11 @@ SUBDIRS = \
             AbstractFactory \   # sub-project names
             FactoryMethod \
             Singleton \
-            Strategy \
-            Tests
+            Strategy \            
+            Bridge \
+            State \
+            Tests \
+
    
  # what subproject depends on others
  #  UI.depends = Engine

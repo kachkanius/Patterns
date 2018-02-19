@@ -11,12 +11,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = tests
 TEMPLATE = app
 
-INCLUDEPATH += $$PWD/../Singleton
-
 SOURCES += main.cpp
 
+INCLUDEPATH +=  $$PWD/../Singleton \
+                $$PWD/../Bridge \
+                $$PWD/../State \
 
-LIBS += -L$$PWD/../build/Singleton -lsingleton
+LIBS += -L$$PWD/../build/Singleton -lSingleton
+LIBS += -L$$PWD/../build/Bridge -lBridge
+LIBS += -L$$PWD/../build/State -lState
 
 HEADERS += \
-    singletontest.h
+    singletontest.h \
+    bridgetest.h \
+    statetest.h
