@@ -24,7 +24,6 @@ public:
     {
         if (status == "LOCKED") {
             status.clear();
-            return;
         }
         if (digit != combination.at(status.size())) {
             status = "ERROR";
