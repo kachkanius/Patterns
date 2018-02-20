@@ -7,6 +7,7 @@ SUBDIRS = \
             Strategy \            
             Bridge \
             State \
+            Flyweight \
             Tests \
 
    

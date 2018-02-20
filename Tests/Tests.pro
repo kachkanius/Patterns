@@ -16,12 +16,16 @@ SOURCES += main.cpp
 INCLUDEPATH +=  $$PWD/../Singleton \
                 $$PWD/../Bridge \
                 $$PWD/../State \
+                $$PWD/../Flyweight \
 
 LIBS += -L$$PWD/../build/Singleton -lSingleton
 LIBS += -L$$PWD/../build/Bridge -lBridge
 LIBS += -L$$PWD/../build/State -lState
+LIBS += -L$$PWD/../build/Flyweight -lFlyweight
+
 
 HEADERS += \
     singletontest.h \
     bridgetest.h \
-    statetest.h
+    statetest.h \
+    flyweighttest.h
